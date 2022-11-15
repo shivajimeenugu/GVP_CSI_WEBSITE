@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family: 'Noto Sans HK', sans-serif;
   background: #fff;
-}
-.slider {
-  margin-bottom: 30px;
-  position: relative;
+} */
+.sticky{
+  z-index: 998;
 }
 .slider .owl-item.active.center .slider-card {
-  transform: scale(1.15);
+  transform: scale(1.03);
+  position: relative;
+  z-index: 999;
   opacity: 1;
   background: #ff9966;
   background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966);
@@ -20,11 +21,10 @@ body {
 }
 .slider-card {
   background: #fff;
-  padding: 0px 0px;
-  margin: 50px 15px 90px 15px;
+  margin: 10px 15px 50px 15px;
   border-radius: 10px;
   box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
-  transform: scale(0.9);
+  transform: scale(0.6);
   opacity: 0.5;
   transition: all 0.3s;
 }
@@ -49,6 +49,7 @@ body {
 }
 .owl-dots {
   text-align: center;
+  display: none;
 }
 .owl-dots .owl-dot {
   height: 10px;
@@ -60,5 +61,5 @@ body {
   outline: none;
 }
 .owl-dots .owl-dot.active {
-  background: #f44336 !important;
+  background: #f44336 !important;
 }
