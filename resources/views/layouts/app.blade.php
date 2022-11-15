@@ -11,41 +11,92 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Styles -->
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-</head>
-<body class="bg-gray-100 h-screen antialiased leading-none font-sans">
-    <div id="app">
-        <header class="bg-blue-900 py-6">
-            <div class="container mx-auto flex justify-between items-center px-6">
-                <div>
-                    <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
-                </div>
-                <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
-                    @guest
-                        <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
-                        @if (Route::has('register'))
-                            <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        @endif
-                    @else
-                        <span>{{ Auth::user()->name }}</span>
+    {{-- <link href="{{ mix('css/app.css') }}" rel="stylesheet"> --}}
 
-                        <a href="{{ route('logout') }}"
-                           class="no-underline hover:underline"
-                           onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
-                            {{ csrf_field() }}
-                        </form>
-                    @endguest
-                </nav>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+
+        .csifont {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .afont {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Scroller styling */
+        .scroller {
+            height: 1.2em;
+            line-height: 1.2em;
+            position: relative;
+            overflow: hidden;
+            width: 10em;
+        }
+
+        .scroller>span {
+            position: absolute;
+            top: 0;
+            animation: slide 8s infinite;
+            font-weight: bold;
+
+        }
+
+        @keyframes slide {
+            0% {
+                top: 0;
+            }
+
+            25% {
+                top: -1.2em;
+            }
+
+            50% {
+                top: -2.4em;
+            }
+
+            75% {
+                top: -3.6em;
+            }
+        }
+    </style>
+</head>
+<body class="h-screen w-full">
+    <div class="sticky top-0 bg-[#F1EBE4] h-20 w-full shadow-2xl
+            justify-between flex">
+            <div class="navStart w-6/12 px-32 py-1 flex"><img class=""
+                    src="./assets/logo.png" alt="" srcset=""></div>
+            <div class="navEnd afont items-center w-6/12 flex justify-evenly ">
+                <a class="hover:text-[#005260] hover:font-bold" href="#">Home</a>
+                <a class="hover:text-[#005260] hover:font-bold" href="#">About
+                    us</a>
+                <a class="hover:text-[#005260] hover:font-bold" href="#">Events</a>
+                <a class="hover:text-[#005260] hover:font-bold" href="#">Gallery</a>
+                <a class="hover:text-[#005260] hover:font-bold" href="#">Team</a>
+                <a class="hover:text-[#005260] hover:font-bold" href="#">Contact</a>
             </div>
-        </header>
+        </div>
 
         @yield('content')
-    </div>
 </body>
 </html>
