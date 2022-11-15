@@ -22,13 +22,52 @@
                     </span>
                 </div>
             </div>
-
         </div>
     </div>
-    <div class="flex justify-center " style="background:
-        linear-gradient(to bottom, #005260 50% , #F1EBE4 50%);">
-        <div class="w-[997px] h-[423px] shadow-2xl bg-white
-            rounded-xl">x</div>
+    <div class="flex justify-center " style="background: linear-gradient(to bottom, #005260 50% , #F1EBE4 50%);">
+        <div class="w-[997px] h-[423px] shadow-2xl bg-white rounded-xl">
+            <div class="container">
+                <div class="slider">
+                    <div class="owl-carousel">
+                        <div style="width: 19rem;" class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="{{asset('carousel/images/slide-1.jpg')}}" alt="" >
+                            </div>
+                            <h5 class="mb-0 text-center"><b>HTML CSS3 Tutorials</b></h5>
+                            <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                        </div>
+                        <div style="width: 19rem;" class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="{{asset('carousel/images/slide-1.jpg')}}" alt="">
+                            </div>
+                            <h5 class="mb-0 text-center"><b>Wordpress Tutorials</b></h5>
+                            <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                        </div>
+                        <div style="width: 19rem;" class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="{{asset('carousel/images/slide-1.jpg')}}" alt="">
+                            </div>
+                            <h5 class="mb-0 text-center"><b>PHP MySQL Tutorials</b></h5>
+                            <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                        </div>
+                        <div style="width: 19rem;" class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="{{asset('carousel/images/slide-1.jpg')}}" alt="">
+                            </div>
+                            <h5 class="mb-0 text-center"><b>Javascript Tutorials</b></h5>
+                            <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                        </div>
+                        <div style="width: 19rem;" class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="{{asset('carousel/images/slide-1.jpg')}}" alt="">
+                            </div>
+                            <h5 class="mb-0 text-center"><b>Bootstrap Tutorials</b></h5>
+                            <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="bg-[#F1EBE4] h-[300px]">3</div>
 </div>
